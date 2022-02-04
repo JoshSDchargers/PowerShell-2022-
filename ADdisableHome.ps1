@@ -1,7 +1,7 @@
 ﻿ Start-Transcript -Path .\Desktop\PastEmpolyees.txt
 
 
-    $users = Get-ADUser -Filter * -SearchBase "OU=Disabled Users,OU=Disabled,OU=Profil,DC=PICR,DC=local" | select -expand samaccountname
+    $users = Get-ADUser -Filter * -SearchBase "" | select -expand samaccountname
     $target = @()
     
     foreach ($user in $users) {
