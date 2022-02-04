@@ -1,5 +1,5 @@
 ﻿$OutFile = "C:\Temp\Permissions.csv" # Insert folder path where you want to save your file and its name 
-$RootPath = "\\picr.local\files\users" # Insert your share directory path 
+$RootPath = "" # Insert your share directory path 
 
 
 
