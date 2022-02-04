@@ -1,0 +1,1 @@
+﻿Compare-Object -IncludeEqual -ExcludeDifferent $FolderName $target
