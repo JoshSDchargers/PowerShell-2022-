@@ -1,7 +1,7 @@
 ﻿Start-Transcript -Path .\Desktop\Paudit\CurrentEmployees.txt
 
 
-$users = Get-ADUser -Filter * -SearchBase "OU=Employees,OU=Accounts,OU=Profil,DC=PICR,DC=local" | select -expand samaccountname
+$users = Get-ADUser -Filter * -SearchBase "" | select -expand samaccountname
     
     foreach ($user in $users) {
 
@@ -13,7 +13,7 @@ $users = Get-ADUser -Filter * -SearchBase "OU=Employees,OU=Accounts,OU=Profil,DC
 
     Write-Host "============================================================================================"
 
-    $users = Get-ADUser -Filter * -SearchBase "OU=Contractors,OU=Accounts,OU=Profil,DC=PICR,DC=local" | select -expand samaccountname
+    $users = Get-ADUser -Filter * -SearchBase "" | select -expand samaccountname
     
     foreach ($user in $users) {
 
