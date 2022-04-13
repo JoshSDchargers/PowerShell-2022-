@@ -28,7 +28,7 @@ $targetCurrentList = @()
 
 Write-Host "============================================================================================"
 
-    $users = Get-ADUser -Filter * -SearchBase "OU=Contractors,OU=Accounts,OU=Profil,DC=PICR,DC=local" | select -expand samaccountname
+    $users = Get-ADUser -Filter * -SearchBase "OU=" | select -expand samaccountname
     $targetContractors = @()
     $targetContractorsList = @()
    
@@ -56,7 +56,7 @@ Write-Host "====================================================================
    Start-Transcript -Path .\Desktop\Paudit\log\PastEmpolyees.txt
 
 
-    $users = Get-ADUser -Filter * -SearchBase "OU=Disabled Users,OU=Disabled,OU=Profil,DC=PICR,DC=local" | select -expand samaccountname
+    $users = Get-ADUser -Filter * -SearchBase "OU=" | select -expand samaccountname
     $target = @()
     
     foreach ($user in $users) {
