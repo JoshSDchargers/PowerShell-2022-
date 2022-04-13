@@ -3,7 +3,7 @@
 
 
 <#
- -SearchBase ‘OU=Employees,OU=Accounts,OU=Profil,OU=PICR,OU=local,’ -Filter *
+ -SearchBase ‘OU=,’ -Filter *
 
 foreach($user in $promotions){
     $ADUser = Get-ADUser -Filter "displayname -eq '$($user.name)'" -Properties mail
