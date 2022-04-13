@@ -1,6 +1,6 @@
 ﻿Start-Process "https://status.okta.com/"
 Start-Process "https://status.office365.com/"
-Start-Process "https://admin.microsoft.com/?auth_upn=Joshua.Aguirre%40prosciento.com&source=applauncher#/homepage"
+Start-Process "https://admin.microsoft.com/?"
 Start-Process "https://status.salesforce.com/products/Salesforce_Services"
 Start-Process "https://status.netsuite.com/"
 Start-Process "https://status.sharefile.com/"
