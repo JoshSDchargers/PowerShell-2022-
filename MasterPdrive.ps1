@@ -10,7 +10,7 @@ Start-Transcript -Path .\Desktop\Paudit\log\CurrentEmployeesList.txt
 $targetCurrent = @()
 $targetCurrentList = @()
 
-    $users = Get-ADUser -Filter * -SearchBase "OU=Employees,OU=Accounts,OU=Profil,DC=PICR,DC=local" | select -expand samaccountname
+    $users = Get-ADUser -Filter * -SearchBase "OU=" | select -expand samaccountname
     
         foreach ($user in $users) {
         $targetCurrentList += $user
