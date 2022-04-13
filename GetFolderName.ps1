@@ -1,5 +1,5 @@
-﻿#Get-ChildItem -Path \\picr.local\Files\users -Directory | select Name 
-$FolderName = Get-ChildItem -Path \\picr.local\Files\users -Directory | foreach Name 
+
+$FolderName = Get-ChildItem -Path \\domain.local\Files\users -Directory | foreach Name 
 
 
 <#
