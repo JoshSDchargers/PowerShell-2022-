@@ -18,7 +18,7 @@ $changeUPN = $changeUPN.Insert($Count,'-term')
 <# It’s an array field, so load proxy data , remove the element , replace it #>
 
 
-$BaseOU = "OU=Employees,OU=Accounts,OU=Profil,DC=PICR,DC=local"
+$BaseOU = "OU="
 
 
 ForEach-Object { Set-AdUser -Identity jtester -Clear ProxyAddresses  }
