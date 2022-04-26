@@ -10,7 +10,7 @@ $TermUser = Get-ADUser -Identity $sAMAccountName | Select-Object -ExpandProperty
     
     $NewPass = Read-Host "Create a new password for $TermUser's account" <#-AsSecureString#>
     $OutInt = "$sAMAccountName = $NewPass"
-    $OutInt >> C:\Users\jaadmin\Desktop\Termination\pwd.txt
+    $OutInt >> C:\Users\xxxxx\Desktop\Termination\pwd.txt
 
 
 
@@ -19,7 +19,7 @@ $TermUser = Get-ADUser -Identity $sAMAccountName | Select-Object -ExpandProperty
      Get-ADUser -Identity $sAMAccountName -Properties title,department,company,manager, UserPrincipalName | Select-Object name,title,department,company,manager,UserPrincipalName  >>  C:\Users\jaadmin\Desktop\Termination\OrgTab.txt
      "Active Dir Groups" >>  C:\Users\jaadmin\Desktop\Termination\OrgTab.txt
      Get-ADPrincipalGroupMembership -Identity $sAMAccountName | Select-Object name >> C:\Users\jaadmin\Desktop\Termination\OrgTab.txt
-     "<<<<=================================================================================>>>>" >>  C:\Users\jaadmin\Desktop\Termination\OrgTab.txt
+     "<<<<=================================================================================>>>>" >>  C:\Users\xxxx\Desktop\Termination\OrgTab.txt
 
 
 
