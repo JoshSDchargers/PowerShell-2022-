@@ -75,7 +75,7 @@ Write-Host "====================================================================
   #=================================================================================================
   #PhaseThree (GetFolderName.ps1)
 
-  $FolderName = Get-ChildItem -Path \\picr.local\Files\users -Directory | foreach Name 
+  $FolderName = Get-ChildItem -Path \\xxxxxx\Files\users -Directory | foreach Name 
 
   #=================================================================================================
   #PhaseFour(CompareArray.ps1) 
@@ -87,12 +87,12 @@ Write-Host "====================================================================
   #PhaseFive (FoldersEmpty.ps1)
   #Empty All Folders
 
-  $EmptyNames = Get-ChildItem -Path \\picr.local\Files\users -Directory | Where-Object {$_.GetFiles().Count -eq 0} | foreach Name
+  $EmptyNames = Get-ChildItem -Path \\xxxxx\Files\users -Directory | Where-Object {$_.GetFiles().Count -eq 0} | foreach Name
   $EmptyNames | Out-File .\Desktop\Paudit\Compare\Empty_PDrive.txt
 
   #=================================================================================================
   #Folder's with Data
-  $Namedata = Get-ChildItem -Path \\picr.local\Files\users -Directory | Where-Object {$_.GetFiles().Count -gt 0} | foreach Name
+  $Namedata = Get-ChildItem -Path \\xxxxx\Files\users -Directory | Where-Object {$_.GetFiles().Count -gt 0} | foreach Name
   $Namedata | Out-File .\Desktop\Paudit\Compare\Data_In_PDrive.txt
 
   #=================================================================================================
